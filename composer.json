@@ -11,11 +11,6 @@
     "type": "library",
     "license": "MIT",
     "minimum-stability": "stable",
-    "require": {
-        "json-mapper/json-mapper": "^2.3",
-        "php": "^8.2",
-        "illuminate/support": "^10|^11"
-    },
     "autoload": {
         "psr-4": {
             "JsonMapper\\LaravelPackage\\": "src/"
@@ -39,12 +34,17 @@
             ]
         }
     },
+    "require": {
+        "json-mapper/json-mapper": "^2.3",
+        "php": "^8.2",
+        "illuminate/support": "^10|^11"
+    },
     "require-dev": {
         "ext-json": "*",
         "squizlabs/php_codesniffer": "^3.5",
-        "phpstan/phpstan": "^0.12.19 || ^1.0.0",
-        "phpunit/phpunit": "^8.0 || ^9.0",
-        "orchestra/testbench": "^5.3|^6.0",
+        "phpstan/phpstan": "^1.0.0",
+        "phpunit/phpunit": "^10.0|^11.0",
+        "orchestra/testbench": "^8.0|^9.0",
         "php-coveralls/php-coveralls": "^2.4",
         "guzzlehttp/guzzle": "^6.5 || ^7.0"
     }
